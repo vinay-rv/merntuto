@@ -15,10 +15,7 @@ const loginUser=asyncHandler(async(req,res)=>{
             token:generateToken(user._id)
         })
     }else {res.status(400)
-    throw new Error('Invalid login credentials')}
-
-
-    
+    throw new Error('Invalid login credentials')}    
 })
 
 const  registerUser = asyncHandler(async (req,res)=>{
